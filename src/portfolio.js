@@ -26,7 +26,7 @@ const greeting = {
     "A passionate software developer 🚀 having two years of experience in big-data analysis, machine learning and public cloud services like AWS and GCP."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://1drv.ms/b/s!AnrJXy0QYlTYibsz8nzzgJzpUEpdRA?e=3Nexrc", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -49,14 +49,14 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "I AM FAMILIAR WITH THE FOLLOWING TECH STACK:",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Build and maintain data pipelines to ensure efficient data processing, secure storage, and retrieval for analysis"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Design and manage cloud infrastructures to ensure scalability, availability, security, and performance of applications conforming to clients' expectation"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Develop highly interactive user interfaces for your web and mobile applications"
     )
   ],
 
@@ -97,8 +97,16 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "Azure",
-      fontAwesomeClassname: "fab fa-azure"
+      skillName: "GCP",
+      fontAwesomeClassname: "fab fa-gcp"
+    },
+    {
+      skillName: "Apache Spark",
+      fontAwesomeClassname: "fab fa-spark"
+    },
+    {
+      skillName: "Pandas",
+      fontAwesomeClassname: "fab fa-pandas"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -107,6 +115,7 @@ https://fontawesome.com/icons?d=gallery */
 // Education Section
 
 const educationInfo = {
+  educationSection: true, // Show education section if it is in the navigation bar
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
@@ -117,7 +126,8 @@ const educationInfo = {
       desc: "Notable courses:",
       descBullets: [
         "Masters Software Engineering Project --- 80% (H1)",
-        "Advanced Database Systems --- (H1)"
+        "Advanced Database Systems --- (H1)",
+        "Software Requirements Analysis --- (H1)"
       ]
     },
     {
@@ -141,15 +151,15 @@ const techStack = {
   experience: [
     {
       Stack: "Big-Data Analysis", //Insert stack or technology you have experience in
-      progressPercentage: "70%" //Insert relative proficiency in percentage
+      progressPercentage: "80%" //Insert relative proficiency in percentage
     },
     {
       Stack: "Cloud Infrastructure",
-      progressPercentage: "60%"
+      progressPercentage: "70%"
     },
     {
       Stack: "Machine Learning",
-      progressPercentage: "50%"
+      progressPercentage: "55%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -161,14 +171,27 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Application Developer Internship",
+      company: "InflaMed",
+      companylogo: require("./assets/images/inflamedLogo.png"),
+      date: "Jul 2023 – Present",
+      desc: "TBD...",
+      descBullets: [
+        "TBD..."
+      ]
+    },
+    {
       role: "Software Engineer",
       company: "HSBC",
       companylogo: require("./assets/images/hsbcLogo.png"),
       date: "Jul 2021 – Feb 2023",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "Develop tools for data ingestion, analysis and encryption in GCP.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Migrated existing on-premises data of 1 terabyte volume to the Google Cloud Platform and ingested all raw data into Big Query",
+        "Built pipelines using Apache Airflow and Jenkins to automatically notify the DevOps team of any job failure, decreasing over 20% incident recovery time",
+        "Implemented PII attributes masking and sensitive information asynchronous encryption using Google Cloud KMS based on data compliance and security",
+        "Communicated with service owners in global team to present best coding practices, serving over 50 developers in all sessions",
+        "Achieved 1st place winner of 2021 HSBC Hackademy competition from among 20 participant teams by designing a B2B '''BuyNowPayLater''' product solution"
       ]
     },
     {
@@ -176,7 +199,14 @@ const workExperiences = {
       company: "Bamboo Technologies",
       companylogo: require("./assets/images/bambooLogo.png"),
       date: "Sep 2020 – Jul 2021",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Develop data-driven applications on Microsoft Power Platform, integrating with Azure visualisation tools.",
+      descBullets: [
+        "Developed a logical data flow in the backend of a task-approval application hosted on Azure and Power Platform, serving over 5,000 end users",
+        "Performed root cause analysis, service interruption recovery and deployment troubleshooting for two products. Created preventative measures and presented to Group Management Team",
+        "Handled monthly product deployment and backup of 2 Gigabytes of on-premise data to Azure",
+        "Mentored 9 new joiners and gave detailed suggestions on large-scale database performance improvement and migration recovery",
+        "Collaborated with cross teams on work estimation/planning and implementing new features within an Agile environment"
+      ]
     }
   ]
 };
@@ -219,7 +249,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -232,50 +262,50 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
-    },
-    {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
+      title: "HSBC Hackademy 2021 - 1st Place Winner",
+      subtitle: "Provided a Buy Now Pay Later solution to solve the innovation challenge (Embed Finance Capabilities into Digital Platforms for B2B Customers).",
+      image: require("./assets/images/HSBC_Hackademy_Certificate.png"),
       imageAlt: "PWA Logo",
       footerLink: [
-        {name: "Certification", url: ""},
+        {name: "View Award", url: "https://1drv.ms/b/s!AnrJXy0QYlTYib5-Qb2LpzUQNApB5g?e=79v5wc"}
+      ]
+    },
+    {
+      title: "AWS Certified Solutions Architect – Professional",
+      subtitle:
+        "Achieved the certification, showcasing expertise in designing scalable, secure, and cost-effective AWS solutions for businesses.",
+      image: require("./assets/images/aws_sap_Logo.png"),
+      imageAlt: "AWS SAP Logo",
+      footerLink: [
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "View Certification",
+          url: "https://www.youracclaim.com/badges/167521e4-f6c3-4d25-927e-d70c8439a840?source=linked_in_profile"
+        }
+      ]
+    },
+    {
+      title: "Google Cloud Certified Professional Cloud Architect",
+      subtitle:
+        "Attained Google Cloud Certified Professional Cloud Architect certification, demonstrating expertise in architecting scalable and reliable cloud solutions on the Google Cloud Platform.",
+      image: require("./assets/images/gcp_arc_Logo.png"),
+      imageAlt: "Google Architect Logo",
+      footerLink: [
+        {
+          name: "View Certification",
+          url: "https://www.credential.net/472f4999-023c-4989-8238-22f9411f7093"
+        }
+      ]
+    },
+    {
+      title: "Certificates of Merit in the University of Auckland",
+      subtitle:
+        "Received Certificates of Outstanding Achievement in Computer Science, recognizing exceptional skills and knowledge in various areas of the field.",
+      image: require("./assets/images/certificates_merit.png"),
+      imageAlt: "Google Architect Logo",
+      footerLink: [
+        {
+          name: "View Certifications",
+          url: "https://1drv.ms/i/s!AnrJXy0QYlTYipNGlNTIvMzb-_Qrwg?e=ulIigw"
         }
       ]
     }
@@ -342,7 +372,7 @@ const podcastSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+    "Discuss opportunities or just want to say hi? My Inbox is open for all.",
   number: "+61-0404992406",
   email_address: "stephen592562965@gmail.com"
 };
