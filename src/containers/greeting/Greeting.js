@@ -53,9 +53,10 @@ export default function Greeting() {
           <div className="greeting-video-div">
             <video
                 alt="AI avatar video of Stephen"
-                src={require("../../assets/images/AI_avatar.mp4")}
                 controls
-            ></video>
+            >
+              <source type="video/mp4" src="https://github.com/hejinhao119/hejinhao.github.io/raw/main/src/assets/images/AI_avatar.mp4" />
+            </video>
           </div>
           <div className="greeting-image-div">
             {illustration.animated ? (
