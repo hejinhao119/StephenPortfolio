@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/hejinhao.github.io/static/css/main.f6e57421.css",
-    "main.js": "/hejinhao.github.io/static/js/main.5fd0650d.js",
+    "main.js": "/hejinhao.github.io/static/js/main.50ed3c61.js",
     "static/css/64.bba8fa55.chunk.css": "/hejinhao.github.io/static/css/64.bba8fa55.chunk.css",
     "static/js/64.296c997c.chunk.js": "/hejinhao.github.io/static/js/64.296c997c.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/hejinhao.github.io/static/css/769.b3cbb36b.chunk.css",
     "static/js/769.bda0d7b7.chunk.js": "/hejinhao.github.io/static/js/769.bda0d7b7.chunk.js",
-    "static/media/AI_avatar.mp4": "/hejinhao.github.io/static/media/AI_avatar.bf2b6e4ea4cb1ae68750.mp4",
+    "static/media/AI_avatar.mp4": "/hejinhao.github.io/static/media/AI_avatar.aec4ef03d16c82ce3ecc.mp4",
     "static/media/certificates_merit.png": "/hejinhao.github.io/static/media/certificates_merit.981dec962d6dbf759be1.png",
     "static/media/inflamedLogo.png": "/hejinhao.github.io/static/media/inflamedLogo.2639fc6624e97b7669ad.png",
     "static/media/HSBC_Hackademy_Certificate.png": "/hejinhao.github.io/static/media/HSBC_Hackademy_Certificate.7658dace2d2f42b44af6.png",
@@ -25,7 +25,7 @@
     "index.html": "/hejinhao.github.io/index.html",
     "static/media/talksCardBack.svg": "/hejinhao.github.io/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.f6e57421.css.map": "/hejinhao.github.io/static/css/main.f6e57421.css.map",
-    "main.5fd0650d.js.map": "/hejinhao.github.io/static/js/main.5fd0650d.js.map",
+    "main.50ed3c61.js.map": "/hejinhao.github.io/static/js/main.50ed3c61.js.map",
     "64.bba8fa55.chunk.css.map": "/hejinhao.github.io/static/css/64.bba8fa55.chunk.css.map",
     "64.296c997c.chunk.js.map": "/hejinhao.github.io/static/js/64.296c997c.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/hejinhao.github.io/static/css/769.b3cbb36b.chunk.css.map",
@@ -33,6 +33,6 @@
   },
   "entrypoints": [
     "static/css/main.f6e57421.css",
-    "static/js/main.5fd0650d.js"
+    "static/js/main.50ed3c61.js"
   ]
 }
