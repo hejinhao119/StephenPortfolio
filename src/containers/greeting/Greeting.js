@@ -50,6 +50,13 @@ export default function Greeting() {
               </div>
             </div>
           </div>
+          <div className="greeting-video-div">
+            <video
+                alt="AI avatar video of Stephen"
+                src={require("../../assets/images/AI_avatar.mp4")}
+                controls
+            ></video>
+          </div>
           <div className="greeting-image-div">
             {illustration.animated ? (
               <DisplayLottie animationData={landingPerson} />
@@ -60,6 +67,7 @@ export default function Greeting() {
               ></img>
             )}
           </div>
+          
         </div>
       </div>
     </Fade>
