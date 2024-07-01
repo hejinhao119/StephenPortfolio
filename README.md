@@ -225,6 +225,12 @@ This section guides you to deploy your portfolio on GitHub pages.
 
 - Navigate to `package.json` and enter your domain name instead of `https://developerfolio.js.org/` in `homepage` variable. For example, if you want your site to be `https://<your-username>.github.io/developerFolio`, add the same to the homepage section of `package.json`.
 
+- In the VS Studio terminal, type the following command to update the assets in the "gh-pages" branch.
+
+```bash
+npm run deploy
+```
+
 - In short you can also add `/devloperFolio` to `package.json` as both are exactly same. Upon doing so, you tell `create-react-app` to add the path assets accordingly.
 
 - Optionally, configure the domain. You can configure a custom domain with GitHub Pages by adding a `CNAME` file to the `public/` folder.
