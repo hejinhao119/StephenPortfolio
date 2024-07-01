@@ -23,7 +23,7 @@ const greeting = {
   username: "Stephen Ho",
   title: "Jinhao He (Stephen)",
   subTitle: emoji(
-    "A passionate software developer 🚀 having two years of experience in big-data analysis, machine learning and public cloud services like AWS and GCP."
+    "A passionate software developer 🚀 having two years of experience in Full-Stack, Big-Data Analysis and Cloud Services in AWS & Azure."
   ),
   resumeLink:
     "https://1drv.ms/b/s!AnrJXy0QYlTYibsz8nzzgJzpUEpdRA?e=3Nexrc", // Set to empty to hide the button
@@ -84,11 +84,7 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "SQL-database",
       fontAwesomeClassname: "fas fa-database"
     },
-    {
-      skillName: "AWS",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
+      {
       skillName: "Firebase",
       fontAwesomeClassname: "fas fa-fire"
     },
@@ -97,17 +93,21 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "GCP",
-      fontAwesomeClassname: "fab fa-gcp"
-    },
-    {
       skillName: "Apache Spark",
       fontAwesomeClassname: "fab fa-spark"
     },
     {
-      skillName: "Pandas",
-      fontAwesomeClassname: "fab fa-pandas"
-    }
+      skillName: "Docker",
+      fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "AWS",
+      fontAwesomeClassname: "fab fa-aws"
+    },
+    {
+      skillName: "Azure",
+      fontAwesomeClassname: "fab fa-azure"
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -122,12 +122,14 @@ const educationInfo = {
       schoolName: "University of Melbourne",
       logo: require("./assets/images/uomLogo.png"),
       subHeader: "Master of Software Engineering",
-      duration: "Jul 2022 - Jul 2024",
-      desc: "Notable courses:",
+      duration: "Jul 2022 - Jun 2024",
+      desc: "Notable courses awarded with High Distinction:",
       descBullets: [
-        "Masters Software Engineering Project --- 80% (H1)",
-        "Advanced Database Systems --- (H1)",
-        "Software Requirements Analysis --- (H1)"
+        "Software Design and Architecture (85%)",
+        "Software Requirements Analysis (83%)",
+        "Advanced Database Systems (82%)",
+        "Masters Software Engineering Project (80%)",
+        "Masters Advanced Software Project (80%)",
       ]
     },
     {
@@ -137,7 +139,7 @@ const educationInfo = {
       duration: "Jul 2017 - Jul 2020",
       desc: "Distinctive academic grade: GPA 7.0/9.0 (A-)",
       descBullets: [
-        "Receive multiple Certificates of Merit from the CS faculty.",
+        "Receive multiple Certificates of Merit (see more below) from the CS faculty.",
         "Regular attendee of web developer meetups and hackathons."
       ]
     }
@@ -150,17 +152,17 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
+      Stack: "Full-Stack", //Insert stack or technology you have experience in
+      progressPercentage: "90%" //Insert relative proficiency in percentage
+    },
+    {
       Stack: "Big-Data Analysis", //Insert stack or technology you have experience in
       progressPercentage: "80%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Cloud Infrastructure",
-      progressPercentage: "70%"
+      Stack: "Cloud DevOps",
+      progressPercentage: "75%"
     },
-    {
-      Stack: "Machine Learning",
-      progressPercentage: "55%"
-    }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
@@ -174,10 +176,14 @@ const workExperiences = {
       role: "Application Developer Internship",
       company: "InflaMed",
       companylogo: require("./assets/images/inflamedLogo.png"),
-      date: "Jul 2023 – Present",
-      desc: "TBD...",
+      date: "Jul 2023 – Oct 2023",
+      desc: "Developed web interfaces for healthcare applications, consuming Twilio RESTful API and ensuring compliance with FHIR standards.",
       descBullets: [
-        "TBD..."
+        "Developed 22 web interfaces following Figma UI templates, ensuring consistency and quality in design implementation",
+        "Implemented Firebase authentication IAM, enhancing user security for users with distinct roles and access levels",
+        "Managed over 50 confidential data files stored in Google Cloud Bucket, implementing regular archiving processes to maintain data accessibility and integrity",
+        "Prioritised effective communication skills to collaborate with UX team members, conducted regular peer review sessions",
+        "Ensured compliance with FHIR standards and regulations in the development of healthcare applications, achieving 5 categories adherence to healthcare data regulations and standards",
       ]
     },
     {
@@ -185,7 +191,7 @@ const workExperiences = {
       company: "HSBC",
       companylogo: require("./assets/images/hsbcLogo.png"),
       date: "Jul 2021 – Feb 2023",
-      desc: "Develop tools for data ingestion, analysis and encryption in GCP.",
+      desc: "Developed tools for data ingestion, data warehousing and encryption in GCP.",
       descBullets: [
         "Migrated existing on-premises data of 1 terabyte volume to the Google Cloud Platform and ingested all raw data into Big Query",
         "Built pipelines using Apache Airflow and Jenkins to automatically notify the DevOps team of any job failure, decreasing over 20% incident recovery time",
@@ -199,7 +205,7 @@ const workExperiences = {
       company: "Bamboo Technologies",
       companylogo: require("./assets/images/bambooLogo.png"),
       date: "Sep 2020 – Jul 2021",
-      desc: "Develop data-driven applications on Microsoft Power Platform, integrating with Azure visualisation tools.",
+      desc: "Developed data-driven applications on Microsoft Power Platform, integrating with Azure visualisation tools.",
       descBullets: [
         "Developed a logical data flow in the backend of a task-approval application hosted on Azure and Power Platform, serving over 5,000 end users",
         "Performed root cause analysis, service interruption recovery and deployment troubleshooting for two products. Created preventative measures and presented to Group Management Team",
